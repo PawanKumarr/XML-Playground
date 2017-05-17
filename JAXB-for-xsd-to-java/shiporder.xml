@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<shiporder orderid="#123">
+    <orderperson>Mr Delivery Man</orderperson>
+    <item>
+        <title>Design Patterns</title>
+        <note>A Head First Book</note>
+        <quantity>1</quantity>
+        <price>450</price>
+    </item>
+    <item>
+        <title>Umbrella</title>
+        <quantity>2</quantity>
+        <price>150</price>
+    </item>
+</shiporder>
