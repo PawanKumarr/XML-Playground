@@ -13,7 +13,8 @@ public class DukeTest {
 		
 		JAXBContext context = JAXBContext.newInstance(Duke.class);
 		Marshaller marshaller = context.createMarshaller();
-		marshaller.marshal(new Duke("java", 2), new File("duke2.xml"));
+		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+		marshaller.marshal(new Duke("java", 7), new File("duke.xml"));
 		
 		Unmarshaller unmarshaller = context.createUnmarshaller();
 		Object unmarshalled = unmarshaller.unmarshal(new File("duke.xml"));
